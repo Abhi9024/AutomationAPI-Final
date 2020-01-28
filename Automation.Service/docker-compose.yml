@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  automation.service:
+    image: automation.service
+    build:
+      context: ./Automation.Service
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "7000:80"
